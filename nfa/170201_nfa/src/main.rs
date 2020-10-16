@@ -61,7 +61,7 @@ use std::io;        //Entradas por teclado
 use regex::Regex;   //Expresiones regulares
 use std::process;   //Procesos
 
-//Función para verificar entradas mediante expresiones regulares
+//Función para verificar entradas mediante expresiones regulares [Colavoración o Apoyo con Alexis Aguirre]
 fn caracter(character: char, estado:i32) -> i32
 {
     let fin="\r";
@@ -73,7 +73,7 @@ fn caracter(character: char, estado:i32) -> i32
 	s.push(character);
 	let new_character: &str = &s[..];
 
-    //Si se recibe cualquier estado correspondiente al vacío devielve 0
+    //Si se recibe cualquier estado correspondiente al vacío devielve 0 [Colavoración con David Rodríguez]
     if estado == 0 || estado == 1 || estado == 3 || estado == 4 || estado == 6 || estado == 7 || estado == 9 || estado == 10 
     {
         return 0;
